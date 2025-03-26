@@ -1,0 +1,37 @@
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  background-color: #154444;
+  color: white;
+  overflow: hidden;
+  margin-top: 27px;
+}
+
+.hero-text h1 {
+  @include textStyle(700, 56px, 100%, start);
+  font-family: "Montserrat";
+  padding-bottom: 20px;
+}
+
+.hero-text p {
+  max-width: 488px;
+  @include textStyle(400, 20px, 25px, start);
+  font-family: "DM Sans";
+  padding-bottom: 35px;
+}
+
+.hero-text button {
+  @include textStyle(400, 20px, 25px, start);
+  font-family: "DM Sans";
+  padding: 15px 25px;
+  color: #154444;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #0fa2a2;
+    color: white;
+  }
+}

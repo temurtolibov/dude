@@ -1,0 +1,26 @@
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+
+.customer-content h2 {
+  @include textStyle(700, 32px, 48px, start);
+  color: #242424;
+  max-width: 500px;
+}
+
+.customer-content p {
+  @include textStyle(400, 20px, 27px, start);
+  color: #383738;
+  max-width: 535px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

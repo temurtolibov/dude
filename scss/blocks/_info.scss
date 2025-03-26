@@ -1,0 +1,85 @@
+.information {
+  margin-top: 140px;
+  background-color: #f4f6f6;
+  padding-bottom: 55px;
+  margin-bottom: 140px;
+}
+
+.information h2 {
+  @include textStyle(700, 32px, 48px, center);
+  color: #222222;
+  max-width: 605px;
+  margin: 0 auto;
+  padding-top: 68px;
+  font-family: "Montserrat";
+}
+
+.information p {
+  @include textStyle(400, 16px, 24px, center);
+  color: #222222;
+  max-width: 493px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: "DM Sans";
+}
+
+.email-signup {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 471px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  .input-wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    .email-icon {
+      color: #777;
+      margin-right: 10px;
+    }
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 15px 0;
+      font-size: 16px;
+      color: #333;
+      &::placeholder {
+        color: #aaa;
+        font-weight: 300;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .register-btn {
+    background-color: #2d5f5d;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+    &:hover {
+      background-color: #224a48;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

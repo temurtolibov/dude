@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 140px;
+  gap: 100px;
+}
+
+.about div > h3 {
+  @include textStyle(700, 32px, 40px, start);
+  color: #244d4d;
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+}
+
+.about div > p {
+  @include textStyle(400, 20px, 25px, start);
+  color: #444444;
+  margin-bottom: 40px;
+}
+
+.about-box {
+  display: flex;
+  align-items: start;
+  gap: 28px;
+}
+
+.about-box div > h4 {
+  @include textStyle(700, 20px, 26px, start);
+  color: #244d4d;
+  font-family: "Montserrat";
+  padding-bottom: 14px;
+}
+
+.about-box div > p {
+  @include textStyle(400, 18px, 26px, start);
+  color: #383738;
+  font-family: "DM Sans";
+  max-width: 271px;
+}

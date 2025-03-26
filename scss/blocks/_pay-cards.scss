@@ -1,0 +1,16 @@
+.pay-card {
+  margin-top: 140px;
+}
+
+.pay-card h2 {
+  @include textStyle(700, 32px, 100%, center);
+  color: #244d4d;
+  padding-bottom: 40px;
+}
+
+.pay-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}

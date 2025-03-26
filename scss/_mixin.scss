@@ -1,0 +1,6 @@
+@mixin textStyle($fw, $fs, $lh, $te) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-align: $te;
+}

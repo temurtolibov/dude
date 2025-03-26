@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px;
+}
+
+.header-ul-li {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-ul-li a {
+  @include textStyle(400, 16px, 100%, center);
+  color: #161616;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  &:hover {
+    color: #154444;
+    transform: scale(1.1);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #154444;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.header-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.search-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2) rotate(10deg);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.menu-icon {
+  cursor: pointer;
+  transition: transform 0.7s ease-in-out, color 0.7s ease-in-out;
+  &:hover {
+    transform: scale(1.2) rotate(180deg);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
